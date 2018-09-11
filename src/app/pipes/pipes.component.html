@@ -1,0 +1,47 @@
+<table>
+  <tr>
+    <th>Sin pipe</th>
+    <th>Con pipe</th>
+  </tr>
+  <tr>
+    <td>{{texto}}</td>
+    <td>{{texto | uppercase}}</td>
+  </tr>
+  <tr>
+    <td>{{texto}}</td>
+    <td>{{texto | lowercase}}</td>
+  </tr>
+  <tr>
+    <td>{{texto}}</td>
+    <td>{{texto | titlecase}}</td>
+  </tr>
+  <tr>
+    <td>{{id}}</td>
+    <td>{{id | slice: -3}}</td>
+  </tr>
+  <tr>
+    <td>{{fecha}}</td>
+    <td>{{fecha | date: "dd/MM/yyyy hh:mm"}}</td>
+    <td>{{fecha | date: "long"}}</td> <!-- medium | short -->
+  </tr>
+  <tr>
+    <td>{{importe}}</td>
+    <td>{{importe | number: '1.2-2'}}</td>
+  </tr>
+  <tr>
+    <td>{{aciertos}}</td>
+    <td>{{aciertos | percent: '2.2-2'}}</td>
+  </tr>
+  <tr>
+    <td>{{importe}}</td>
+    <td>{{importe | currency: 'EUR' : true}}</td>
+  </tr>
+  <tr>
+    <td>{{jugador}}</td>
+    <td>{{jugador | json}}</td>
+  </tr>
+  <tr>
+    <td>{{cantidad}}</td>
+    <td>{{cantidad | numero : 4 : '€'}}</td>
+  </tr>
+</table>
